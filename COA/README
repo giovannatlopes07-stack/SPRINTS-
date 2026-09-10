@@ -1,1 +1,11 @@
-
+Correlação com a Disciplina de Arquitetura de Computadores
+Sistemas de Entradas e Saídas (E/S):
+Entrada: Os dados de geração e consumo entram no sistema (através de variáveis simuladas no código ou barramentos de comunicação)
+Saída: Os pinos GP configurados (GP13, GP14, GP15) atuam como dispositivos de saída enviando sinais para acender os LEDs correspondentes e emitir dados de texto.
+Processador (CPU):
+O processador ARM do Raspberry Pi Pico realiza o processamento aritmético (Geração - Consumo). A tomada de decisão baseia-se em comparações lógicas executadas pelas instruções condicionais (if/elif/else).
+Memória (RAM e Flash):
+O código-fonte em MicroPython reside na memória Flash.
+Durante a execução, os valores numéricos (geração, consumo, disponível) são armazenados em endereços da memória SRAM como inteiros binários codificados.
+Representação de Dados:
+O microprocessador não enxerga o valor decimal diretamente, ele armazena a potência em padrão de registradores binários de 32 bits. A conversão exibida no terminal demonstra a abstração entre a base usada por seres humanos (Decimal) e a base nativa de execução do circuito digital (Binário / Hexadecimal).
